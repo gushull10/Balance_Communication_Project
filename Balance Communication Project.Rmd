@@ -27,8 +27,16 @@ Part 2: Gus - Design code to take readings at certain time intervals
 ```
 Resources Consulted:
 - Software info (https://www.aandd.jp/products/software/winct.html)
+
 Part 3: Emily - Design code to insert readings into certain parts of a .csv file.
+After the readings are collected at specific time intervals and recorded, they will need to be placed in an orderly fasion in a program. 
+Excel will not be used, but rather a csv file. A csv file is is a delimited text file that uses a comma to separate values. 
+A CSV file is different than a XLS file because a CSV format is a plain text format in which values are seperated by commas. An XLS file format is an Excel sheets binary file format that hold information about all the worksheets in a file, both content and formatting. 
+Code will be created in order to place the recordings in certain cells in the .csv file. The recordings will be labeled accordingly using a code. 
+This is the last step in the project, so research is continuing on the best way to format the data in the .csv file, while we establish communication with the scale. 
 ```{r}
 
 ```
 Resources Consulted:
+CSV file management: https://www.geeksforgeeks.org/csv-file-management-using-c/
+What is a CSV File and How to open the CSV File Format: https://www.freecodecamp.org/news/what-is-a-csv-file-and-how-to-open-the-csv-file-format/
