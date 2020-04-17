@@ -21,3 +21,4 @@ Part 2: Gus - Design code to take readings at certain time intervals
 
 ```
 Resources Consulted:
+article
