@@ -15,6 +15,10 @@ Part 1: Levi - Establish communication with balance.
 
 ```
 Resources Consulted: 
+- Balance Communication (instructables.com)
+- Software Interfaces Sartorius Balances to PC(windmill.co.uk)
+- Balance Communication Software WinCT (Balances.com)
+Notes: At this point in our project I am trying to do some research on how people have been able to interface with various brands of balances. This information will hopefully give me insight on what to look for and where to start when beginning the process of interfacing with the balance that we have on hand. 
 
 Part 2: Gus - Design code to take readings at certain time intervals
 ```{r}
