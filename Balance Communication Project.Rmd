@@ -15,3 +15,9 @@ Part 1: Levi - Establish communication with balance.
 
 ```
 Resources Consulted: 
+
+Part 2: Gus - Design code to take readings at certain time intervals
+```{r}
+
+```
+Resources Consulted:
