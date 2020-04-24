@@ -12,7 +12,22 @@ Goals: Create a code using python that will communicate with a balance, take rea
 
 Part 1: Levi - Establish communication with balance. 
 ```{r}
+#!/usr/bin/env python3
+import time
+import serial
 
+ser = serial.Serial(
+ port='/dev/ttyUSB0',
+ baudrate = 2400,
+ parity=serial.PARITY_EVEN,
+ stopbits=serial.STOPBITS_ONE,
+ bytesize=serial.SEVENBITS,
+ timeout=None
+)
+
+while 1:
+ x=ser.readline()
+ print(x)
 ```
 Resources Consulted: 
 - Balance Communication (instructables.com)
