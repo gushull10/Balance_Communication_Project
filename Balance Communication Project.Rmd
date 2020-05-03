@@ -38,6 +38,7 @@ Notes: At this point in our project I am trying to do some research on how peopl
 Part 2: Gus - Design code to take readings at certain time intervals
 #For the function i am contributing to, i am looking into possible software that will allow the scale to take readings at certain time intervals. I have been specifically looking into RsWeight programs to help with the issue. In the program, one can set many perameters and take readings at specific intervals. There is options in this program to export to an Excell file and have the data arranged respectively. Need to see what components are required for the specific program and if its a possibility.
 I believe the code below will take readings every 10 seconds by continuously exucuting Levis code.
+I need to figure out a stop code so it will not take measurments continuously
 
 ```{r}
 import time
@@ -51,6 +52,7 @@ while True:
 ```
 Resources Consulted:
 - Software info (https://www.aandd.jp/products/software/winct.html)
+- Python guide https://docs.python.org/3.4/library/time.html
 
 Part 3: Emily - Design code to insert readings into certain parts of a .csv file.
 After the readings are collected at specific time intervals and recorded, they will need to be placed in an orderly fasion in a program. 
