@@ -11,25 +11,25 @@ Part 1: Levi - Establish communication with balance.
 #!/usr/bin/env python3
 import time
 import serial
+import csv
 
-ser = serial.Serial(
- port='/dev/ttyUSB0',
- baudrate = 2400,
- parity=serial.PARITY_EVEN,
- stopbits=serial.STOPBITS_ONE,
- bytesize=serial.SEVENBITS,
- timeout=None
-)
-
-while 1:
- x=ser.readline()
- print(x)
- 
+def conscale():
+	ser=serial.Serial(
+		port='/dev/ttyUSB0',
+		baudrate=9600,
+		parity='N',
+		stopbits=serial.STOPBITS_ONE,
+		bytesize=seril.SEVENBITS,
+		timeout=None);
+	x=ser.readline()
+	return x
+	
 Resources Consulted: 
 - Balance Communication (instructables.com)
 - Software Interfaces Sartorius Balances to PC(windmill.co.uk)
 - Balance Communication Software WinCT (Balances.com)
-Notes: At this point in our project I am trying to do some research on how people have been able to interface with various brands of balances. This information will hopefully give me insight on what to look for and where to start when beginning the process of interfacing with the balance that we have on hand. 
+
+Notes: I was not succesful at getting the code to interface with the balance. I was able to find the serial port and get an error code back that said "device reports readiness to read but returned no data". I believe I was extremly close to getting this code to work with some more troublshooting with the code and the settings on the balance but unfortunatly ran out of time. 
 
 Part 2: Gus - Design code to take readings at certain time intervals
 #For the function i am contributing to, i am looking into possible software that will allow the scale to take readings at certain time intervals. I have been specifically looking into RsWeight programs to help with the issue. In the program, one can set many perameters and take readings at specific intervals. There is options in this program to export to an Excell file and have the data arranged respectively. Need to see what components are required for the specific program and if its a possibility.
