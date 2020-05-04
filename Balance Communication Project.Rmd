@@ -60,8 +60,14 @@ Excel will not be used, but rather a csv file. A csv file is is a delimited text
 A CSV file is different than a XLS file because a CSV format is a plain text format in which values are seperated by commas. An XLS file format is an Excel sheets binary file format that hold information about all the worksheets in a file, both content and formatting. 
 Code will be created in order to place the recordings in certain cells in the .csv file. The recordings will be labeled accordingly using a code. 
 This is the last step in the project, so research is continuing on the best way to format the data in the .csv file, while we establish communication with the scale. 
+This is just a start there may need to be more added.
 ```{r}
-
+Import CSV
+Result = ()
+with open('output.csv', 'w') as csvfile:
+    csvwriter = csv.writer(csvfile)
+    for row in result.items():
+        csvwriter.writerow(row)
 ```
 Resources Consulted:
 CSV file management: https://www.geeksforgeeks.org/csv-file-management-using-c/
