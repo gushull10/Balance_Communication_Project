@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 Goals: Create a code using python that will communicate with a balance, take readings at certain time intervals, and also put those readings into a .csv file.
 
 Part 1: Levi - Establish communication with balance. 
-```{r}
+
 #!/usr/bin/env python3
 import time
 import serial
@@ -28,7 +28,7 @@ ser = serial.Serial(
 while 1:
  x=ser.readline()
  print(x)
-```
+ 
 Resources Consulted: 
 - Balance Communication (instructables.com)
 - Software Interfaces Sartorius Balances to PC(windmill.co.uk)
@@ -40,7 +40,7 @@ Part 2: Gus - Design code to take readings at certain time intervals
 I believe the code below will take readings every 10 seconds by continuously exucuting Levis code.
 I need to figure out a stop code so it will not take measurments continuously
 
-```{r}
+
 import time
 
 def readmass():
@@ -49,7 +49,7 @@ def readmass():
 
 while True:
     readmass()
-```
+    
 Resources Consulted:
 - Software info (https://www.aandd.jp/products/software/winct.html)
 - Python guide https://docs.python.org/3.4/library/time.html
@@ -61,14 +61,14 @@ A CSV file is different than a XLS file because a CSV format is a plain text for
 Code will be created in order to place the recordings in certain cells in the .csv file. The recordings will be labeled accordingly using a code. 
 This is the last step in the project, so research is continuing on the best way to format the data in the .csv file, while we establish communication with the scale. 
 This is just a start there may need to be more added.
-```{r}
+
 Import CSV
 Result = ()
 with open('output.csv', 'w') as csvfile:
     csvwriter = csv.writer(csvfile)
     for row in result.items():
         csvwriter.writerow(row)
-```
+        
 Resources Consulted:
 CSV file management: https://www.geeksforgeeks.org/csv-file-management-using-c/
 What is a CSV File and How to open the CSV File Format: https://www.freecodecamp.org/news/what-is-a-csv-file-and-how-to-open-the-csv-file-format/
