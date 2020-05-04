@@ -3,11 +3,7 @@ title: "Balance Communication Project"
 author: "Levi_Bagwell"
 date: "April 16, 2020"
 output: html_document
----
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 Goals: Create a code using python that will communicate with a balance, take readings at certain time intervals, and also put those readings into a .csv file.
 
 Part 1: Levi - Establish communication with balance. 
