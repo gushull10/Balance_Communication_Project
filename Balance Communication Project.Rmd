@@ -68,3 +68,34 @@ with open('output.csv', 'w') as csvfile:
 Resources Consulted:
 CSV file management: https://www.geeksforgeeks.org/csv-file-management-using-c/
 What is a CSV File and How to open the CSV File Format: https://www.freecodecamp.org/news/what-is-a-csv-file-and-how-to-open-the-csv-file-format/
+
+
+THE CODE AS OF 05/4/20 @11:30 AM
+
+import time
+import serial
+import csv
+
+def conscale():
+	ser=serial.Serial(
+		port='/dev/ttyUSB0',
+		baudrate = 9600,
+		parity=serial.PARITY_EVEN,
+		stopbits=serial.STOPBITS_ONE,
+		bytesize=serial.SEVENBITS,
+		timeout=None);
+		
+	x=ser.readline()
+	return x
+	
+
+def readmass():
+	t_end = time.time() + 15;
+	with open('mass.csv', 'w', newline='') as f:
+		csvwriter = csv.writer(f, delimiter = ',',quotechar='|', quoting=csv.QUOTE_MINIMAL )
+		while time.time() < t_end:
+			csvwriter.writerow([conscale()])
+			time.sleep(3)
+			
+	
+ readmass()
