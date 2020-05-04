@@ -46,6 +46,17 @@ def readmass():
 while True:
     readmass()
     
+Some redactions... this is edited code that has a "stop time" 
+Emily needs to add csv file code
+
+def readmass():
+	t_end = time.time() + 15;
+	emily needs to make csv file to report to
+		while time.time() < t_end:
+			'python writes to csv'
+			time.sleep(3)
+		
+    
 Resources Consulted:
 - Software info (https://www.aandd.jp/products/software/winct.html)
 - Python guide https://docs.python.org/3.4/library/time.html
